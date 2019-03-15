@@ -32,19 +32,25 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
     <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Adf">
-      <HintPath>C:\develop\bin\adf4\net35\4.6.13\Adf.dll</HintPath>
+    <Reference Include="Adf, Version=4.6.13.32022, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\adf\4.6.13\net35\Adf.dll</HintPath>
     </Reference>
-    <Reference Include="Adf.Cs">
-      <HintPath>C:\develop\bin\adf.cs\net35\1.4.4\Adf.Cs.dll</HintPath>
+    <Reference Include="Adf.Cs, Version=1.4.4.31833, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\adf.cs\1.4.4\net35\Adf.Cs.dll</HintPath>
     </Reference>
-    <Reference Include="Adf.Service">
-      <HintPath>C:\develop\bin\adf.service\35\2.0.2\Adf.Service.dll</HintPath>
+    <Reference Include="Adf.Service, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\adf.service\2.0.2\net35\Adf.Service.dll</HintPath>
     </Reference>
-    <Reference Include="protobuf-net">
-      <HintPath>C:\develop\bin\protobuf-net.dll</HintPath>
+    <Reference Include="protobuf-net, Version=2.0.0.622, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\protobuf-net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />

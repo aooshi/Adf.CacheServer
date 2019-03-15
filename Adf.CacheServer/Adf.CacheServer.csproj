@@ -34,24 +34,22 @@
     <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
     <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
     <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
-    <DocumentationFile>
-    </DocumentationFile>
+    <DocumentationFile>C:\develop\bin\adf.cacheserver\net20\1.0.2\Adf.CacheServer.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Adf, Version=4.6.13.30867, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Adf, Version=4.6.13.32024, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\develop\bin\adf4\net20\4.6.13\Adf.dll</HintPath>
+      <HintPath>..\libs\adf.cs\1.4.4\net20\Adf.dll</HintPath>
     </Reference>
     <Reference Include="Adf.Cs, Version=1.4.4.31832, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\develop\bin\adf.cs\net20\1.4.4\Adf.Cs.dll</HintPath>
+      <HintPath>..\libs\adf.cs\1.4.4\net20\Adf.Cs.dll</HintPath>
     </Reference>
     <Reference Include="Adf.Service, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\develop\bin\adf.service\20\2.0.2\Adf.Service.dll</HintPath>
+      <HintPath>..\libs\adf.service\2.0.2\net20\Adf.Service.dll</HintPath>
     </Reference>
-    <Reference Include="protobuf-net, Version=2.0.0.622, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="protobuf-net">
       <HintPath>..\libs\protobuf-net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
