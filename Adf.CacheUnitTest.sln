@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{70893CFB-118C-4F3D-BA63-4472CAADC2E3}"
+	ProjectSection(SolutionItems) = preProject
+		Version.txt = Version.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adf.CacheServerClient", "Adf.CacheServerClient\Adf.CacheServerClient.csproj", "{22712182-B93F-4AB3-9C88-11CD43F97FE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adf.CacheServerUnitTest", "Adf.CacheServerUnitTest\Adf.CacheServerUnitTest.csproj", "{EDB7D296-CCF3-4A7B-AD07-AC3A26325204}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8554AB4A-6EA2-42DA-97E4-AAC08DCD9597}"
+	ProjectSection(SolutionItems) = preProject
+		Adf.CacheUnitTest.vsmdi = Adf.CacheUnitTest.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Adf.CacheUnitTest.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22712182-B93F-4AB3-9C88-11CD43F97FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22712182-B93F-4AB3-9C88-11CD43F97FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22712182-B93F-4AB3-9C88-11CD43F97FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22712182-B93F-4AB3-9C88-11CD43F97FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDB7D296-CCF3-4A7B-AD07-AC3A26325204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB7D296-CCF3-4A7B-AD07-AC3A26325204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB7D296-CCF3-4A7B-AD07-AC3A26325204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB7D296-CCF3-4A7B-AD07-AC3A26325204}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25FE5BE0-671A-415D-B304-4D6F80BD044D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adf.CacheServer</RootNamespace>
+    <AssemblyName>Adf.CacheServer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>C:\develop\bin\adf.cacheserver\net40\1.0.2\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Adf">
+      <HintPath>C:\develop\bin\adf4\net40\4.6.13\Adf.dll</HintPath>
+    </Reference>
+    <Reference Include="Adf.Cs">
+      <HintPath>C:\develop\bin\adf.cs\net40\1.4.4\Adf.Cs.dll</HintPath>
+    </Reference>
+    <Reference Include="Adf.Service">
+      <HintPath>C:\develop\bin\adf.service\40\2.0.2\Adf.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>C:\develop\bin\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="..\Adf.CacheServer\CacheManager.cs">
+      <Link>CacheManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.CacheServer\CacheProperty.cs">
+      <Link>CacheProperty.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.CacheServer\CacheServer.cs">
+      <Link>CacheServer.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.CacheServer\HashHelper.cs">
+      <Link>HashHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.CacheServer\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.CacheServer\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Adf.CacheServer\ToolInstallService.bat">
+      <Link>ToolInstallService.bat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Adf.CacheServer\ToolRunConsole.bat">
+      <Link>ToolRunConsole.bat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Adf.CacheServer\ToolUninstallService.bat">
+      <Link>ToolUninstallService.bat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
